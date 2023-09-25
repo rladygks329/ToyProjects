@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# 쇼핑몰 만들어보기
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+요구사항 정리
 
-## Available Scripts
+회원가입 기능
 
-In the project directory, you can run:
+- 아이디는 중복을 허용하지 않는다.
+- 비밀번호는 8자이상에 특수문자가 있어야한다.
+- 비밀번호 확인 기능에서 입력한 비밀번호가 정확한지 파악해야한다.
+- 이메일은 유효 해야한다. ( @ 포함 )
+- 도로명 주소를 찾고, 상세 주소를 받아야한다. (배송지)
+- 가입이 끝나면 로그인 페이지로 이동
+- 서버에 데이터 전송 시 hashcode화 하여 암호화 해야한다.
+- 필수 약관에 동의했는지 확인해야한다.
+- 선택약관 (광고성 수신 동의)가 있어야한다
+- 모두 동의하기 기능이 있어야한다.
 
-### `npm start`
+로그인 기능
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- hashcode화 하여 암호화 해야한다.
+- 아이디와 비밀번호가 일치하면 홈페이지로 이동한다.
+- 만약 토큰이 있다면 홈페이지로 이동한다
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+비밀번호 찾기 기능
 
-### `npm test`
+- 아이디를 통해 이메일을 보내고 입력창에 해당 코드를 입력하면 비밀번호를 재설정할 수 있게한다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+목록 조회 기능
+목록 검색 기능
+카테고리 검색 기능
+가격대 별, 카테고리별 정렬 기능 => 이중 적용 + url로 조건 유지, 판매량 순
+상품 리뷰 작성
+lazy loading image
+3번정도 - 스크롤시 상품 더 가져오기
+페이지 네이션 기능
+구매 목록 조회 기능
+질문 기능 - 판매자에게
+판매자 - 회원 관리 + 물품 등록, 삭제, 수정
+관리자 회원 정보 관리, 주문 목록 관리
+신고 기능
+결제 기능
+포인트 적립 기능
+배달 상태 조회 기능?
+장바구니 기능
