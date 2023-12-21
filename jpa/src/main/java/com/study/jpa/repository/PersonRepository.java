@@ -8,5 +8,8 @@ import java.util.List;
 
 @Repository
 public interface PersonRepository  extends JpaRepository<Person, Long> {
-    List<Person> findListPersonList(String description);
+
+    public List<Person> findByName(String name);
+
+    public List<Person> findByNameLike(String keyword);
 }
