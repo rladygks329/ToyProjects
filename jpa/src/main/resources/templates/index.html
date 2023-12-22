@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
     <div>안녕 반가워</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>name</th>
+                <th>age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="m, i : ${list}">
+                <td th:text="${m.name}"></td>
+                <td th:text="${m.age}"></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
